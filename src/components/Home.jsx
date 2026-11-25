@@ -2,9 +2,9 @@
 import React from 'react';
 
 const Home = ({
-  title,
+  title = '',
   setTitle,
-  value,
+  value = '',
   setValue,
   pasteId,
   createPaste
@@ -41,7 +41,7 @@ const Home = ({
 
           <button
             onClick={createPaste}
-            className="px-7 py-4 rounded-xl font-bold text-white bg-gradient-to-r from-violet-600 to-blue-600 hover:from-violet-500 hover:to-blue-500 shadow-lg shadow-violet-600/20"
+            className="px-7 py-4 rounded-xl font-bold text-white bg-linear-to-r from-violet-600 to-blue-600 hover:from-violet-500 hover:to-blue-500 shadow-lg shadow-violet-600/20"
           >
             {pasteId ? 'Update Paste' : '+ Create Paste'}
           </button>
